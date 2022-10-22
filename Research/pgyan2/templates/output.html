@@ -1,0 +1,13 @@
+<!-- Creates an invisible box to hold the output with a specified color -->
+    <div style="color: rgb(209, 43, 173)">
+        <!-- Runs a for loop that is similar to python - iterates through every element of the output_list -->
+    {% for item in output_list %}
+    <div>
+        <!-- Prints out the elements of output_list along with dividers -->
+        ------------
+        <h3> {{item}}</h3>
+    </div>
+    <!-- Terminates the for loop -->
+    {% endfor %}
+    ------------
+    </div>
