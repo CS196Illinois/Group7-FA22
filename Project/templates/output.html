@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style> table, th, td {border:1px solid black;} </style>
     <head>
         <title>Output</title>
         <meta charset="UTF-8">
@@ -13,25 +14,19 @@
         <br>
         
         <h2 style = "color:rgb(58, 82, 105);text-align:left;font-size:2vw">Data</h2>
-        <div style="border: 1px solid black">
-            <table>
+        <div style="border: 1px solid black">  
+            <table style="width:100%">
                 <tr>
-                    <th>Txt</th>
-                    <th>Deg</th>
-                    <th>Keywrds</th>
+                    <th>Text</th>
+                    <th>Degree</th>
+                    <th>Keywords</th>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Maria Anders</td>
-                    <td>Germany</td>
-                </tr>
-                <tr>
-                    <td>Centro comercial Moctezuma</td>
-                    <td>Francisco Chang</td>
-                    <td>Mexico</td>
+                    <td>This Text</td>
+                    <td><span class="nowrap">{{outputdeg}}</span></td>
+                    <td><span class="nowrap">{{outputkey}}</span></td>
                 </tr>
             </table>
         </div>
     </body>
-    
 </html>
