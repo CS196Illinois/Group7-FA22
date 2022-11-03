@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style> 
+            body {
+                background-color:rgb(255,255,255);
+            }
+            h1 {
+                font-family: GeorgiaMonaco, "Times New Roman";
+                text-align: center;
+                margin-top: 0px;
+                margin-left:0px;
+                margin-right:0px;
+                margin-bottom: 10px;
+                color: black;
+                font-size:60px;
+                background-color:rgb(203, 230, 253);
+                padding: 16px;
+            }
+            p {
+                font-family: "Courier New", Garamond, Serif;
+                font-size: 18px;
+                text-align: center;
+                color:black;
+                padding: 5px;
+                margin-top:0px;
+                margin-bottom: 10px;
+                margin-left:30px;
+                margin-right:30px;
+            }
+            label {
+                font-family: "Courier New", Garamond, Serif;
+                padding: 20px;
+                margin-left:150px;
+                margin-bottom: 50px;
+                font-size:20px;
+                color:black;
+            }
+            label textarea {
+                vertical-align: middle;
+            }
+            .border {
+                border-width: 5px;
+                border-color: rgb(203, 230, 253); 
+                border-style: solid;
+                border-radius: 15px;
+            }
+            testarea {
+                text-align: center;
+            }
+            button {
+                background-color: rgb(203, 230, 253);
+                border: none;
+                color: black;
+                padding: 12px 25px;
+                text-align: center;
+                font-size: 16px;
+                border-radius: 12px;
+                font-family: "Courier New", Garamond, Serif;
+            }
+            .center {
+                text-align: center;
+            }
+            
+        </style> 
+        <title>Input</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body >
+        <h1> Summarization & Article Finder </h1>
+        <p class = "border"> This is a text summarization tool and an article finder where you can paste in your text, and give the degree with which you want it to be summarized. </p>
+        <form action="/action_page.php"> </form>
+        <form method="POST">
+            <label for="fname">Text:&nbsp;&nbsp;&nbsp;<textarea id = "test" rows = "20" cols = "125" name = "test" style = "border: 3px solid rgb(203, 220, 253); margin-bottom: 30px;"> </textarea></label>
+
+            <label for="fname">Degree of Summarization:</label>
+            <input type="text" id="fname" name="degreeText" size="20" style = "border: 3px solid rgb(203, 220, 253);"><br><br>
+            <label for="fname">Degree of Search:</label>
+            <input type="text" id="fname" name="degreeSearch" size="20" style = "border: 3px solid rgb(203, 220, 253);"><br><br>
+            <div class = "center">
+                <button type="submit" style="height: 40px; width: 100px">Submit</button>
+            </div>
+        </form>
+        <p style = "text-align:right; font-size:15px"> Created By Lang Gang </p>
+    </body>
+    
+</html>
+
