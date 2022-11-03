@@ -1,5 +1,5 @@
-# Group TEAM_NUMBER
-Group Name: TEAM_NAME
+# Group 7
+Group Name: LANG GANG
 
 [MVP Link](http://cs196.cs.illinois.edu)
 
