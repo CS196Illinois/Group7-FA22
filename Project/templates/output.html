@@ -71,7 +71,7 @@
                     <th width = "200px">Summary</th>
                     <th width = "50px" >Keywords</th>
                 </tr>
-                <tr height = "50px">
+                <tr height = "50px" style="text-align: center">
                     <td width = "25px">{{outputdeg}}</td>
                     <td width = "200px"><span class = "nowrap">{{outputstr}}</span></td>
                     <td width = "50px"><span class = "nowrap">{{outputkey}}</span></td>
@@ -80,6 +80,23 @@
         </div>
         
         <p class = "labels" style= "width: 120px"> Related Articles:</p>
-        <p class = "textlook" >&#x2022; {{outputsearchlist}}</p>
+        <div>  
+            <table>
+                <tr height = "50px" style = "background-color: rgb(203, 230, 253)">
+                    <th width = "50px">URL</th>
+                    <th width = "50px">Keyword #1</th>
+                    <th width = "50px" >Keyword #2</th>
+                    <th width = "50px" >Keyword #3</th>
+                </tr>
+                {% for item in output_list %}
+                <tr height = "50px" style="text-align: center">
+                    {% for i in item %}
+                    <td width = "50px"><span class = "nowrap">{{i}}</span></td>                        
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+<!--         <p class = "textlook" >&#x2022; {{outputsearchlist}}</p> -->
     </body>
 </html>
